@@ -1,0 +1,111 @@
+@font-face {
+    font-family: chalk;
+    src: url('./fonts/Chalk\ Board.ttf');
+}
+
+body {
+    background-color: rgb(50, 112, 74);
+    overflow: hidden;
+}
+.logo {
+    text-align: center;
+    font-family: chalk;
+    color: white;
+    text-shadow: 2px 2px #333;
+    font-size: 4rem;
+    margin: 0 0 0 0;
+    padding:0 0 0 0;
+    position: relative;
+    
+}
+.questionBox {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: chalk;
+    color: rgb(236, 236, 143);
+    text-shadow: 2px 2px #333;
+    font-size: 3.5rem;
+    text-align: center;
+   
+}
+
+#answer {
+    display: none;
+    animation: grow 1s infinite;
+}
+
+#question:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#goBack {
+    position: absolute;
+    top: 90%;
+    left: 95%;
+
+}
+
+.next {
+    position: absolute;
+    top: 90%;
+    left: 0%;
+    height: 100px;
+    width: 100px;
+
+}
+
+
+#refreshMe {
+    height: 100px;
+    width: 100px;
+}
+
+.fifthGrader {
+    position: absolute;
+    
+    font-family: chalk;
+    font-size: 15rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    color: rgb(236, 236, 143);
+    height: 100%;
+    width: 100%;
+    text-shadow: 3px 3px #333;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    top: -25%;
+    gap: 0;
+}
+#smarter {
+    font-size: 20rem;
+    color: rgb(241, 81, 81);
+}
+
+#you {
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: white;
+}
+
+#five {
+    animation: changeColor 5s infinite ease-in-out;
+}
+@keyframes grow {
+    50% {
+        transform: scale(1.05)
+    }
+}
+
+@keyframes changeColor {
+    50% {
+        color: white;
+        text-shadow: 2px 2px rgb(241, 81, 81);
+        font-size: 15.5rem;
+    }
+}

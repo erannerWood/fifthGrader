@@ -1,0 +1,59 @@
+@font-face {
+    font-family: chalk;
+    src: url('./fonts/Chalk\ Board.ttf');
+}
+
+* {
+    background-color:rgb(71, 143, 71);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: chalk;
+    font-size: 4rem;
+}
+h1 {
+    font-family: chalk;
+    color: white;
+    text-shadow: 2px 2px #333;
+    text-align: center;
+    font-size: 5rem;
+}
+label {
+    font-family: chalk;
+    font-size: 3rem;
+}
+
+input {
+    background-color: white;
+    width: 500px;
+    height: 50px;
+    font-size: 2rem;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    align-items: center;
+}
+.questBox {
+    height: 600px;
+    width: 800px;
+    
+}
+
+button {
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: chalk;
+    color: white;
+    background-color: rgb(241, 71, 71);
+    font-size: 2rem;
+}
